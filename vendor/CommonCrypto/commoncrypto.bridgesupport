@@ -1,0 +1,324 @@
+<?xml version='1.0'?>
+<!DOCTYPE signatures SYSTEM "file://localhost/System/Library/DTDs/BridgeSupport.dtd">
+<signatures version='0.9'>
+<enum name='CC_HMAC_CONTEXT_SIZE' value='96'/>
+<enum name='CC_MD2_BLOCK_BYTES' value='64'/>
+<enum name='CC_MD2_DIGEST_LENGTH' value='16'/>
+<enum name='CC_MD4_BLOCK_BYTES' value='64'/>
+<enum name='CC_MD4_DIGEST_LENGTH' value='16'/>
+<enum name='CC_MD5_BLOCK_BYTES' value='64'/>
+<enum name='CC_MD5_DIGEST_LENGTH' value='16'/>
+<enum name='CC_SHA1_BLOCK_BYTES' value='64'/>
+<enum name='CC_SHA1_DIGEST_LENGTH' value='20'/>
+<enum name='CC_SHA224_BLOCK_BYTES' value='64'/>
+<enum name='CC_SHA224_DIGEST_LENGTH' value='28'/>
+<enum name='CC_SHA256_BLOCK_BYTES' value='64'/>
+<enum name='CC_SHA256_DIGEST_LENGTH' value='32'/>
+<enum name='CC_SHA384_BLOCK_BYTES' value='128'/>
+<enum name='CC_SHA384_DIGEST_LENGTH' value='48'/>
+<enum name='CC_SHA512_BLOCK_BYTES' value='128'/>
+<enum name='CC_SHA512_DIGEST_LENGTH' value='64'/>
+<enum name='kCCAlgorithm3DES' value='2'/>
+<enum name='kCCAlgorithmAES128' value='0'/>
+<enum name='kCCAlgorithmCAST' value='3'/>
+<enum name='kCCAlgorithmDES' value='1'/>
+<enum name='kCCAlgorithmRC2' value='5'/>
+<enum name='kCCAlgorithmRC4' value='4'/>
+<enum name='kCCAlignmentError' value='-4303'/>
+<enum name='kCCBlockSize3DES' value='8'/>
+<enum name='kCCBlockSizeAES128' value='16'/>
+<enum name='kCCBlockSizeCAST' value='8'/>
+<enum name='kCCBlockSizeDES' value='8'/>
+<enum name='kCCBlockSizeRC2' value='8'/>
+<enum name='kCCBufferTooSmall' value='-4301'/>
+<enum name='kCCContextSize3DES' value='496'/>
+<enum name='kCCContextSizeAES128' value='404'/>
+<enum name='kCCContextSizeCAST' value='240'/>
+<enum name='kCCContextSizeDES' value='240'/>
+<enum name='kCCContextSizeRC4' value='1072'/>
+<enum name='kCCDecodeError' value='-4304'/>
+<enum name='kCCDecrypt' value='1'/>
+<enum name='kCCEncrypt' value='0'/>
+<enum name='kCCHmacAlgMD5' value='1'/>
+<enum name='kCCHmacAlgSHA1' value='0'/>
+<enum name='kCCHmacAlgSHA224' value='5'/>
+<enum name='kCCHmacAlgSHA256' value='2'/>
+<enum name='kCCHmacAlgSHA384' value='3'/>
+<enum name='kCCHmacAlgSHA512' value='4'/>
+<enum name='kCCKeySize3DES' value='24'/>
+<enum name='kCCKeySizeAES128' value='16'/>
+<enum name='kCCKeySizeAES192' value='24'/>
+<enum name='kCCKeySizeAES256' value='32'/>
+<enum name='kCCKeySizeDES' value='8'/>
+<enum name='kCCKeySizeMaxCAST' value='16'/>
+<enum name='kCCKeySizeMaxRC2' value='128'/>
+<enum name='kCCKeySizeMaxRC4' value='512'/>
+<enum name='kCCKeySizeMinCAST' value='5'/>
+<enum name='kCCKeySizeMinRC2' value='1'/>
+<enum name='kCCKeySizeMinRC4' value='1'/>
+<enum name='kCCMemoryFailure' value='-4302'/>
+<enum name='kCCOptionECBMode' value='2'/>
+<enum name='kCCOptionPKCS7Padding' value='1'/>
+<enum name='kCCParamError' value='-4300'/>
+<enum name='kCCSuccess' value='0'/>
+<enum name='kCCUnimplemented' value='-4305'/>
+<function name='CCCrypt'>
+<arg type='I'/>
+<arg type='I'/>
+<arg type='I'/>
+<arg type='^v'/>
+<arg type='L'/>
+<arg type='^v'/>
+<arg type='^v'/>
+<arg type='L'/>
+<arg type='^v'/>
+<arg type='L'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='CCCryptorCreate'>
+<arg type='I'/>
+<arg type='I'/>
+<arg type='I'/>
+<arg type='^v'/>
+<arg type='L'/>
+<arg type='^v'/>
+<arg type='^^{_CCCryptor}'/>
+<retval type='i'/>
+</function>
+<function name='CCCryptorCreateFromData'>
+<arg type='I'/>
+<arg type='I'/>
+<arg type='I'/>
+<arg type='^v'/>
+<arg type='L'/>
+<arg type='^v'/>
+<arg type='^v'/>
+<arg type='L'/>
+<arg type='^^{_CCCryptor}'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='CCCryptorFinal'>
+<arg type='^{_CCCryptor=}'/>
+<arg type='^v'/>
+<arg type='L'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='CCCryptorGetOutputLength'>
+<arg type='^{_CCCryptor=}'/>
+<arg type='L'/>
+<arg type='B'/>
+<retval type='L'/>
+</function>
+<function name='CCCryptorRelease'>
+<arg type='^{_CCCryptor=}'/>
+<retval type='i'/>
+</function>
+<function name='CCCryptorReset'>
+<arg type='^{_CCCryptor=}'/>
+<arg type='^v'/>
+<retval type='i'/>
+</function>
+<function name='CCCryptorUpdate'>
+<arg type='^{_CCCryptor=}'/>
+<arg type='^v'/>
+<arg type='L'/>
+<arg type='^v'/>
+<arg type='L'/>
+<arg type='^I'/>
+<retval type='i'/>
+</function>
+<function name='CCHmac'>
+<arg type='I'/>
+<arg type='^v'/>
+<arg type='L'/>
+<arg type='^v'/>
+<arg type='L'/>
+<arg type='^v'/>
+</function>
+<function name='CCHmacFinal'>
+<arg type='^{?=[96I]}'/>
+<arg type='^v'/>
+</function>
+<function name='CCHmacInit'>
+<arg type='^{?=[96I]}'/>
+<arg type='I'/>
+<arg type='^v'/>
+<arg type='L'/>
+</function>
+<function name='CCHmacUpdate'>
+<arg type='^{?=[96I]}'/>
+<arg type='^v'/>
+<arg type='L'/>
+</function>
+<function name='CC_MD2'>
+<arg type='^v'/>
+<arg type='I'/>
+<arg type='*'/>
+<retval type='*'/>
+</function>
+<function name='CC_MD2_Final'>
+<arg type='*'/>
+<arg type='^{CC_MD2state_st=i[16C][16I][16I]}'/>
+<retval type='i'/>
+</function>
+<function name='CC_MD2_Init'>
+<arg type='^{CC_MD2state_st=i[16C][16I][16I]}'/>
+<retval type='i'/>
+</function>
+<function name='CC_MD2_Update'>
+<arg type='^{CC_MD2state_st=i[16C][16I][16I]}'/>
+<arg type='^v'/>
+<arg type='I'/>
+<retval type='i'/>
+</function>
+<function name='CC_MD4'>
+<arg type='^v'/>
+<arg type='I'/>
+<arg type='*'/>
+<retval type='*'/>
+</function>
+<function name='CC_MD4_Final'>
+<arg type='*'/>
+<arg type='^{CC_MD4state_st=IIIIII[16I]i}'/>
+<retval type='i'/>
+</function>
+<function name='CC_MD4_Init'>
+<arg type='^{CC_MD4state_st=IIIIII[16I]i}'/>
+<retval type='i'/>
+</function>
+<function name='CC_MD4_Update'>
+<arg type='^{CC_MD4state_st=IIIIII[16I]i}'/>
+<arg type='^v'/>
+<arg type='I'/>
+<retval type='i'/>
+</function>
+<function name='CC_MD5'>
+<arg type='^v'/>
+<arg type='I'/>
+<arg type='*'/>
+<retval type='*'/>
+</function>
+<function name='CC_MD5_Final'>
+<arg type='*'/>
+<arg type='^{CC_MD5state_st=IIIIII[16I]i}'/>
+<retval type='i'/>
+</function>
+<function name='CC_MD5_Init'>
+<arg type='^{CC_MD5state_st=IIIIII[16I]i}'/>
+<retval type='i'/>
+</function>
+<function name='CC_MD5_Update'>
+<arg type='^{CC_MD5state_st=IIIIII[16I]i}'/>
+<arg type='^v'/>
+<arg type='I'/>
+<retval type='i'/>
+</function>
+<function name='CC_SHA1'>
+<arg type='^v'/>
+<arg type='I'/>
+<arg type='*'/>
+<retval type='*'/>
+</function>
+<function name='CC_SHA1_Final'>
+<arg type='*'/>
+<arg type='^{CC_SHA1state_st=IIIIIII[16I]i}'/>
+<retval type='i'/>
+</function>
+<function name='CC_SHA1_Init'>
+<arg type='^{CC_SHA1state_st=IIIIIII[16I]i}'/>
+<retval type='i'/>
+</function>
+<function name='CC_SHA1_Update'>
+<arg type='^{CC_SHA1state_st=IIIIIII[16I]i}'/>
+<arg type='^v'/>
+<arg type='I'/>
+<retval type='i'/>
+</function>
+<function name='CC_SHA224'>
+<arg type='^v'/>
+<arg type='I'/>
+<arg type='*'/>
+<retval type='*'/>
+</function>
+<function name='CC_SHA224_Final'>
+<arg type='*'/>
+<arg type='^{CC_SHA256state_st=[2I][8I][16I]}'/>
+<retval type='i'/>
+</function>
+<function name='CC_SHA224_Init'>
+<arg type='^{CC_SHA256state_st=[2I][8I][16I]}'/>
+<retval type='i'/>
+</function>
+<function name='CC_SHA224_Update'>
+<arg type='^{CC_SHA256state_st=[2I][8I][16I]}'/>
+<arg type='^v'/>
+<arg type='I'/>
+<retval type='i'/>
+</function>
+<function name='CC_SHA256'>
+<arg type='^v'/>
+<arg type='I'/>
+<arg type='*'/>
+<retval type='*'/>
+</function>
+<function name='CC_SHA256_Final'>
+<arg type='*'/>
+<arg type='^{CC_SHA256state_st=[2I][8I][16I]}'/>
+<retval type='i'/>
+</function>
+<function name='CC_SHA256_Init'>
+<arg type='^{CC_SHA256state_st=[2I][8I][16I]}'/>
+<retval type='i'/>
+</function>
+<function name='CC_SHA256_Update'>
+<arg type='^{CC_SHA256state_st=[2I][8I][16I]}'/>
+<arg type='^v'/>
+<arg type='I'/>
+<retval type='i'/>
+</function>
+<function name='CC_SHA384'>
+<arg type='^v'/>
+<arg type='I'/>
+<arg type='*'/>
+<retval type='*'/>
+</function>
+<function name='CC_SHA384_Final'>
+<arg type='*'/>
+<arg type='^{CC_SHA512state_st=[2Q][8Q][16Q]}'/>
+<retval type='i'/>
+</function>
+<function name='CC_SHA384_Init'>
+<arg type='^{CC_SHA512state_st=[2Q][8Q][16Q]}'/>
+<retval type='i'/>
+</function>
+<function name='CC_SHA384_Update'>
+<arg type='^{CC_SHA512state_st=[2Q][8Q][16Q]}'/>
+<arg type='^v'/>
+<arg type='I'/>
+<retval type='i'/>
+</function>
+<function name='CC_SHA512'>
+<arg type='^v'/>
+<arg type='I'/>
+<arg type='*'/>
+<retval type='*'/>
+</function>
+<function name='CC_SHA512_Final'>
+<arg type='*'/>
+<arg type='^{CC_SHA512state_st=[2Q][8Q][16Q]}'/>
+<retval type='i'/>
+</function>
+<function name='CC_SHA512_Init'>
+<arg type='^{CC_SHA512state_st=[2Q][8Q][16Q]}'/>
+<retval type='i'/>
+</function>
+<function name='CC_SHA512_Update'>
+<arg type='^{CC_SHA512state_st=[2Q][8Q][16Q]}'/>
+<arg type='^v'/>
+<arg type='I'/>
+<retval type='i'/>
+</function>
+</signatures>

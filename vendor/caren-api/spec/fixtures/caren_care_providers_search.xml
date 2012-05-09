@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<care-providers type="array">
+  <care-provider>
+    <url-shortcut>pantein</url-shortcut>
+    <name>Pantein</name>
+    <created-at type="datetime">2011-10-10T14:19:53+02:00</created-at>
+    <address-line></address-line>
+    <updated-at type="datetime">2011-10-11T08:58:48+02:00</updated-at>
+    <lng type="float">5.29127</lng>
+    <id type="integer">2</id>
+    <website></website>
+    <telephone></telephone>
+    <time-zone>Europe/Amsterdam</time-zone>
+    <lat type="float">52.1326</lat>
+    <email></email>
+    <logo></logo>
+    <linkable>true</linkable>
+  </care-provider>
+</care-providers>

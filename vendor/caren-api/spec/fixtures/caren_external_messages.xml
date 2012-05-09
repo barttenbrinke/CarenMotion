@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<external-messages type="array">
+  <external-message>
+    <created-at type="datetime">2011-09-09T15:14:13+02:00</created-at>
+    <body>Test</body>
+    <updated-at type="datetime">2011-09-09T15:14:13+02:00</updated-at>
+    <in-reply-to-id type="integer" nil="true"></in-reply-to-id>
+    <subject-id type="integer">5</subject-id>
+    <id type="integer">1</id>
+    <in-reply-to-type nil="true"></in-reply-to-type>
+    <care-provider-id type="integer">1</care-provider-id>
+    <person-id type="integer">1</person-id>
+    <external-person-id nil="true"></external-person-id>
+  </external-message>
+  <external-message>
+    <created-at type="datetime">2011-09-09T15:14:13+02:00</created-at>
+    <body>Does it work ...</body>
+    <updated-at type="datetime">2011-09-09T15:14:13+02:00</updated-at>
+    <in-reply-to-id type="integer" nil="true"></in-reply-to-id>
+    <subject-id type="integer">5</subject-id>
+    <id type="integer">2</id>
+    <in-reply-to-type nil="true"></in-reply-to-type>
+    <care-provider-id type="integer">1</care-provider-id>
+    <person-id type="integer">1</person-id>
+    <external-person-id nil="true"></external-person-id>
+  </external-message>
+</external-messages>

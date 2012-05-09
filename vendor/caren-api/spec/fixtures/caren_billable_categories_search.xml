@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<billable-categories type="array">
+  <billable-category>
+    <name>Billables</name>
+    <created-at type="datetime">2011-10-10T10:38:49+02:00</created-at>
+    <updated-at type="datetime">2011-10-10T10:40:35+02:00</updated-at>
+    <billable-category-id type="integer"></billable-category-id>
+    <id type="integer">1</id>
+    <description>Generic billables</description>
+    <icon>http://example.com/1.png</icon>
+  </billable-category>
+</billable-categories>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<payments type="array">
+  <payment>
+    <amount-in-cents type="integer">1898</amount-in-cents>
+    <auth-code nil="true"></auth-code>
+    <created-at type="datetime">2012-03-15T10:59:20+01:00</created-at>
+    <currency>EUR</currency>
+    <gateway>ideal</gateway>
+    <id type="integer">2</id>
+    <invoice-id type="integer">8</invoice-id>
+    <person-id type="integer" nil="true"></person-id>
+    <psp-reference>0030000006785038</psp-reference>
+    <refusal-reason nil="true"></refusal-reason>
+    <result-code nil="true"></result-code>
+    <status>failed</status>
+    <updated-at type="datetime">2012-03-15T10:59:24+01:00</updated-at>
+  </payment>
+</payments>

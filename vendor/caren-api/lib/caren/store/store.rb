@@ -1,0 +1,2 @@
+module Caren::Store
+end

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invoice>
+  <access-token>06590eb9de2f2baf</access-token>
+  <created-at type="datetime">2012-04-03T13:41:15+02:00</created-at>
+  <customer-email>jenny@example.com</customer-email>
+  <email-status>sent</email-status>
+  <id type="integer">17</id>
+  <invoiced-at type="datetime">2012-04-03T13:41:15+02:00</invoiced-at>
+  <paid type="boolean">true</paid>
+  <paid-at type="datetime">2012-04-03T13:45:48+02:00</paid-at>
+  <payment-method nil="true"></payment-method>
+  <payment-method-description nil="true"></payment-method-description>
+  <reference>NW-05463-12-0</reference>
+  <requires-account type="boolean">true</requires-account>
+  <requires-payment type="boolean">true</requires-payment>
+  <updated-at type="datetime">2012-04-03T13:45:48+02:00</updated-at>
+  <line-items type="array">
+    <line-item type="Invoice::LineItem">
+      <created-at type="datetime">2012-04-03T13:41:15+02:00</created-at>
+      <currency>EUR</currency>
+      <description>Wheel</description>
+      <discount-in-cents type="integer" nil="true"></discount-in-cents>
+      <discount-in-promillage type="integer" nil="true"></discount-in-promillage>
+      <id type="integer">28</id>
+      <invoice-id type="integer">17</invoice-id>
+      <price-in-cents type="integer">1199</price-in-cents>
+      <quantity type="integer">4</quantity>
+      <sales-tax-in-cents type="integer" nil="true"></sales-tax-in-cents>
+      <sales-tax-in-promillage type="integer">60</sales-tax-in-promillage>
+      <sku>wheels-12-nut-56</sku>
+      <updated-at type="datetime">2012-04-03T13:41:15+02:00</updated-at>
+    </line-item>
+    <line-item type="Invoice::LineItem">
+      <created-at type="datetime">2012-04-03T13:41:15+02:00</created-at>
+      <currency>EUR</currency>
+      <description>Nut</description>
+      <discount-in-cents type="integer" nil="true"></discount-in-cents>
+      <discount-in-promillage type="integer" nil="true"></discount-in-promillage>
+      <id type="integer">29</id>
+      <invoice-id type="integer">17</invoice-id>
+      <price-in-cents type="integer">699</price-in-cents>
+      <quantity type="integer">8</quantity>
+      <sales-tax-in-cents type="integer" nil="true"></sales-tax-in-cents>
+      <sales-tax-in-promillage type="integer">190</sales-tax-in-promillage>
+      <sku>wheels-43-nut-29</sku>
+      <updated-at type="datetime">2012-04-03T13:41:15+02:00</updated-at>
+    </line-item>
+  </line-items>
+  <invoice-url>https://www.caren-cares.com/invoices/06590eb9de2f2baf</invoice-url>
+  <payment-url>https://www.caren-cares.com/invoices/06590eb9de2f2baf/payment</payment-url>
+  <billing-address>
+    <address-line-1>Botsholsedwarsweg 12</address-line-1>
+    <address-line-2 nil="true"></address-line-2>
+    <city>Waverveen</city>
+    <country>Nederland</country>
+    <full-name>Joris de Boer</full-name>
+    <state-province-or-region nil="true"></state-province-or-region>
+    <zip>3646 AJ</zip>
+  </billing-address>
+</invoice>
